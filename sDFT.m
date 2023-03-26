@@ -9,10 +9,10 @@ function  [values] = sDFT(data)
 %      and return the harmonic coefficients.
 %
 % INPUTS:
-%  data:        Discrete Data To DFS.
+%  data:        Discrete Data To DFT.
 %
 % OUTPUTS:
-%  values:      Coefficients of the DFS.
+%  values:      Coefficients of the DFT.
 %
 % VARIABLES:
 %  No:             Length of the data.
@@ -23,7 +23,7 @@ function  [values] = sDFT(data)
 %
 % Example Code:
 % discreteData = [18,12,6,0,6,12];
-% [values] = sDFS(discreteData)
+% [values] = sDFT(discreteData)
 % values =
 %
 %  54.0000 + 0.0000i
@@ -47,4 +47,4 @@ for k = 0:No-1
 end
 
 values = values * No;
-end %% End of function "sDFS"
+end %% End of function "sDFT"
